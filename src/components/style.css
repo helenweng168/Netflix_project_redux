@@ -1,0 +1,67 @@
+h1 {
+  padding-left: 10px;
+  color: white;
+  text-align: left;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+.wrapper {
+  margin-left: 100px;
+}
+
+.mylistRow {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.mylist {
+  margin-right: 100px;
+}
+
+.recommendationsRow {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.img {
+  margin-left: 10px;
+}
+
+.img:hover {
+  display: inline-block;
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+.title {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.button {
+  border: 0;
+  background-color: red;
+  color: white;
+  width: 100px;
+  height: 30px;
+  margin-left: 45px;
+  font-weight: bold;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.mylistRow:hover button {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.recommendationsRow:hover button {
+  opacity: 1;
+  cursor: pointer;
+}
