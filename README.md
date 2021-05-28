@@ -1,3 +1,7 @@
+# Introduction about the project
+
+The product was implement along with MERN stack. The frontend is built with ReactJS and redux, the backend is built with node.js and express.js, and the database is MongoDB Atlas (cloud database).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -7,6 +11,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `yarn start`
+
+When you run "npm start" or "yarn start", the application server and backend server will start concurrently, so you don't need to run two servers.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
