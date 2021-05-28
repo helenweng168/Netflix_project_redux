@@ -12,10 +12,12 @@ export const fetchUsers = () => {
     dispatch(fetchUsersRequest());
     axios
       //https://jsonplaceholder.typicode.com/users
-      .get("data.json")
+      //.get("data.json")
+      .get("/api/movies")
       .then((response) => {
+        console.log(response.data[0]);
         // response.data is the users
-        const list = response.data;
+        const list = response.data[0];
         //const recommendations = response.data.recommendations;
         dispatch(fetchUsersSuccess(list));
       })
