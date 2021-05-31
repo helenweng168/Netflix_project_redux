@@ -22,7 +22,7 @@ function UsersContainer({ userData, fetchUsers, deleteItem, addItem }) {
             userData.mylist &&
             userData.mylist.map(function (mylist) {
               return (
-                <div className="mylistRow">
+                <div className="mylistRow" key={mylist.id}>
                   <div className="img">
                     <img src={mylist.img} alt="p1" />
                   </div>
@@ -47,7 +47,7 @@ function UsersContainer({ userData, fetchUsers, deleteItem, addItem }) {
             userData.recommendations &&
             userData.recommendations.map(function (recommendations) {
               return (
-                <div className="recommendationsRow">
+                <div className="recommendationsRow" key={recommendations.id}>
                   <div className="img">
                     <img src={recommendations.img} alt="p1" />
                   </div>

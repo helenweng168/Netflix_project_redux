@@ -31,6 +31,15 @@ export const fetchUsers = () => {
 export const deleteItem = (id) => {
   return (dispatch) => {
     dispatch(deleteStateItem(id));
+    //API call to delet a move with id
+    return axios.post("/api/movies_delete/" + id);
+    /* return axios
+      .post("/api/movies")
+      .then(
+        (response) => response,
+        (error) => console.log("An error occured.", error)
+      )
+      .then((response) => dispatch(fetchUsers())); */
   };
 };
 
@@ -43,7 +52,16 @@ export const deleteStateItem = (id) => {
 
 export const addItem = (id) => {
   return (dispatch) => {
+    //perform expected result of the POST API request
     dispatch(addStateItem(id));
+
+    //API call to POST a new move with id
+    return axios.post("/api/movies_post/" + id);
+    /* .then(
+        (response) => response,
+        (error) => console.log("An error occured.", error)
+      )
+      .then((response) => dispatch(fetchUsers()));*/
   };
 };
 
